@@ -1,3 +1,5 @@
+![Logo](/readmeFiles/banner.jpg)
+
 # LIC Policy Manager
 
 A freelancing project for creating android app for LIC agents.
