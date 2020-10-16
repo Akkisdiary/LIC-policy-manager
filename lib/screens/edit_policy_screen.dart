@@ -162,7 +162,7 @@ class _EditPolicyScreenState extends State<EditPolicyScreen> {
                             : _editedPolicy.imageUrl != null
                                 ? NetworkImage(_editedPolicy.imageUrl)
                                 : AssetImage(
-                                    'assets/images/profile_img.png',
+                                    'assets/profile_img.png',
                                   ),
                       ),
                       FlatButton.icon(

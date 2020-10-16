@@ -67,7 +67,7 @@ class _UserImagePickerState extends State<UserImagePicker> {
           backgroundImage: _pickedImage != null
               ? FileImage(_pickedImage)
               : AssetImage(
-                  'assets/images/profile_img.png',
+                  'assets/profile_img.png',
                 ),
         ),
         FlatButton.icon(

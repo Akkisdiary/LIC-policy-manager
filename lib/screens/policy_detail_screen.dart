@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
@@ -9,7 +8,6 @@ import './edit_policy_screen.dart';
 
 class PolicyDetailScreen extends StatelessWidget {
   static const routeName = '/PolicyDetailScreen';
-  
 
   @override
   Widget build(BuildContext context) {
@@ -77,21 +75,24 @@ class PolicyDetailScreen extends StatelessWidget {
                   Container(
                     width: width * 0.4,
                     child: Center(
-                        child: (policy.imageUrl != null) ? Padding(
-                          padding: EdgeInsets.all(width * 0.04),
-                            child: AspectRatio(
-                              aspectRatio: 1 / 1,
+                      child: (policy.imageUrl != null)
+                          ? Padding(
+                              padding: EdgeInsets.all(width * 0.04),
+                              child: AspectRatio(
+                                aspectRatio: 1 / 1,
                                 child: ClipOval(
                                   child: FadeInImage.assetNetwork(
-                                    fit: BoxFit.cover,
-                                    placeholder: 'assets/images/profile_img.png',
-                                    image: policy.imageUrl),
-                          ),
-                        ),
-                      ) : CircleAvatar(
-                        radius: width * 0.16,
-                        backgroundImage: AssetImage('assets/images/profile_img.png'),
-                      ),
+                                      fit: BoxFit.cover,
+                                      placeholder: 'assets/profile_img.png',
+                                      image: policy.imageUrl),
+                                ),
+                              ),
+                            )
+                          : CircleAvatar(
+                              radius: width * 0.16,
+                              backgroundImage:
+                                  AssetImage('assets/profile_img.png'),
+                            ),
                     ),
                   ),
                   Container(

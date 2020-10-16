@@ -73,7 +73,7 @@ class _MyAccountScreenState extends State<MyAccountScreen> {
                           ? NetworkImage(
                               agent.imgUrl,
                             )
-                          : AssetImage('assets/images/profile_img.png'),
+                          : AssetImage('assets/profile_img.png'),
                 ),
               ),
               if (isEditing) ...[
@@ -225,17 +225,21 @@ class _MyAccountScreenState extends State<MyAccountScreen> {
                     context: context,
                     builder: (ctx) => AlertDialog(
                       title: Text(v ? 'Password reset' : 'Error'),
-                      content: Text(v ? 'A link to reset your password has been sent to your registered email' : 'Something went wrong.',),
+                      content: Text(
+                        v
+                            ? 'A link to reset your password has been sent to your registered email'
+                            : 'Something went wrong.',
+                      ),
                       actions: <Widget>[
                         FlatButton(
                           child: Text('Okay'),
                           onPressed: () {
                             Navigator.of(ctx).pop();
-                            },
-                          ),
-                        ],
-                      ),
-                    );
+                          },
+                        ),
+                      ],
+                    ),
+                  );
                 });
               },
             ),
