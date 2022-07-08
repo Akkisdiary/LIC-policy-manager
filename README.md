@@ -2,10 +2,6 @@
 
 # LIC Policy Manager
 
-A freelancing project for creating android app for LIC agents.
-
-### Project Description
-
 LIC agents in India have hundreds of LIC Policies registered under them.
 These agents have to remain in contact with their client and follow up any updates regarding their policies after successful registeration.
 
